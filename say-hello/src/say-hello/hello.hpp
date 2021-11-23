@@ -2,7 +2,7 @@
 #define HELLO_HPP_INCLUDED
 
 namespace hello {
-    void spune_hello();
+    void say_hello();
 }  //namespace hello
 
 #endif //HELLO_HPP_INCLUDED
