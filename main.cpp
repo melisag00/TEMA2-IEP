@@ -1,5 +1,10 @@
 #include <iostream>
+
+#include "hello.hpp" //pt a folosi libraria trebuie inclusa
+
 int main(){
     
-    std::cout<<"Hello\n";
+    //apelez functia definita
+    hello::spune_hello();
+
 }
