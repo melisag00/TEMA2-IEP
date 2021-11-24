@@ -34,4 +34,15 @@ class Carte
 };
 
 
+class PriorityC : public Carte {
+
+    public:
+    int pret;
+
+    public:
+    PriorityC(const std:: string& nume, const std:: string& autor, int pagini, int pret);
+    PriorityC(const PriorityC& obj);
+    
+};
+
 #endif //CARTE_H_

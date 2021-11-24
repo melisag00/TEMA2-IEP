@@ -43,18 +43,42 @@ Carte::Carte(const Carte& obj){
            if(this == &obj) 
            
               { cout << "Self-assignment\n";
-               return *this;    }              // ITEM11 identity test: if a self-assignment,
-                                              // do nothing }                               
-    	numeCarte = obj.numeCarte;
+               return *this;    }              // ITEM 11 identity test: if a self-assignment,
+                                               // do nothing                             
+    numeCarte = obj.numeCarte;
 		autorCarte = obj.autorCarte;
 		nrPagini = obj.nrPagini;
 
-        // ITEM10 Have assignment operators return a reference to *this
+        // ITEM 10 Have assignment operators return a reference to *this
         return *this;
 		 }
 
    //DECONSTRUCTOR
    Carte ::~Carte(){}
+
+
+   //ITEM12 Copy all parts of an object
+
+   
+     PriorityC::PriorityC(const std:: string& nume, const std:: string& autor, int pagini, int pret) : Carte(nume, autor, pagini) {
+
+     pret = pret;
+
+     }
+
+
+     PriorityC::PriorityC(const PriorityC& obj) //copy constr
+     : Carte(obj),                              // invoke base class copy ctor
+     pret(obj.pret)
+    {}
+
+
+
+
+
+
+
+
 
 
 
