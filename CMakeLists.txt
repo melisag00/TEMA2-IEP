@@ -3,4 +3,4 @@ project(MyProject VERSION 1.0.0)
 
 #adaug numele subdirectorului
 add_subdirectory(Carte) #add subdirector
-add_subdirectory(hello-exe) #executabilul
+add_subdirectory(carte-exe) #executabilul

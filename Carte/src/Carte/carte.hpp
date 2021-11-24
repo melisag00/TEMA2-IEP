@@ -5,12 +5,6 @@
 #include <string>
 using namespace std;
 
-/*namespace hello {
-    void say_hello();
-    void say_nume();
-}  //namespace hello
-*/
-
 
 class Carte
 {
